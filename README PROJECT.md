@@ -3,8 +3,6 @@
 ### Create training set
 
 * Make sure all the files are in the working directory including this script file
-
-
 * load the id of the subject
 * change name of column
 * load the activities
@@ -21,7 +19,7 @@
 * cbind subject_activity_train and X-train into train
 
 
-## Create test set
+### Create test set
 
 * load the id of the subject
 * change name of column
@@ -37,29 +35,29 @@
 
 
 
-## Merge the training and the test sets to create one data set.
+### Merge the training and the test sets .
 
 * rbind test and train to one dataset
-dataset = rbind (train,test)
 
-##Extracts only the measurements on the mean and standard deviation for each measurement. 
+
+###Extracts only the measurements on the mean and standard deviation for each measurement. 
 
 * subset
 
-##Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+###Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
 * install and load reshap2 package
 * melt dataset
 * calculate averages
 
 
-##Appropriately labels the data set with descriptive activity names.
+###Appropriately labels the data set with descriptive activity names.
 
 * replace "mean-X,Y,Z" with "Mean value  X, Y and Z directions."
 * replace "std" with "Standard Deviation"
 * remove brackets
 
-##Write dataframe to file average.csv
+###Write dataframe to file average.csv
 
 
 
